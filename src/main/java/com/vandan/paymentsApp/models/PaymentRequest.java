@@ -20,8 +20,6 @@ public class PaymentRequest {
         this.amount = amount;
     }
 
-
-
     public double getAmount() {
         return amount;
     }

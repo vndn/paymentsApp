@@ -16,11 +16,12 @@ public class PaymentService{
     private static int counter=1;
 
     public ResponseEntity<TransactionStatus> payToPerson(PaymentRequest paymentRequest){
-
         System.out.println(paymentRequest.getAmount());
         System.out.println(paymentDBStore.save(paymentRequest));
         TransactionStatus transactionStatus = new TransactionStatus(counter++, paymentRequest.getAmount(), "SUCCESS");
         return new ResponseEntity<TransactionStatus>(transactionStatus, HttpStatus.OK);
-        //return true;
     }
+
+
+
 }
