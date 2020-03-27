@@ -1,14 +1,13 @@
 package com.vandan.paymentsApp.models;
 
-import com.vandan.paymentsApp.controllers.Payment;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
+
 public class NewUser {
     private String phoneNumber;
     private String name;
+    private String promoCode;
 
     NewUser() {}
 
@@ -17,12 +16,5 @@ public class NewUser {
         this.name = name;
     }
 
-    public String getName() {
-        return this.name;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
 }
 
