@@ -1,4 +1,4 @@
-package com.vandan.paymentsApp.models.db;
+package com.vandan.paymentsApp.entity;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

@@ -1,4 +1,4 @@
-package com.vandan.paymentsApp.models;
+package com.vandan.paymentsApp.entity;
 
 import lombok.Getter;
 import lombok.Setter;

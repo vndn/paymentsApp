@@ -1,16 +1,12 @@
 package com.vandan.paymentsApp.controllers;
 
-import com.vandan.paymentsApp.models.PaymentRequest;
-import com.vandan.paymentsApp.models.TransactionStatus;
+import com.vandan.paymentsApp.models.request.PaymentRequest;
+import com.vandan.paymentsApp.models.response.TransactionStatus;
 import com.vandan.paymentsApp.services.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.net.URI;
 import java.net.URISyntaxException;
 
 @RestController

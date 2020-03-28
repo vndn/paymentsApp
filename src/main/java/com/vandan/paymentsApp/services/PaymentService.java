@@ -1,7 +1,7 @@
 package com.vandan.paymentsApp.services;
 
-import com.vandan.paymentsApp.models.PaymentRequest;
-import com.vandan.paymentsApp.models.TransactionStatus;
+import com.vandan.paymentsApp.models.request.PaymentRequest;
+import com.vandan.paymentsApp.models.response.TransactionStatus;
 import com.vandan.paymentsApp.repository.PaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,7 +1,7 @@
 package com.vandan.paymentsApp.controllers;
 
-import com.vandan.paymentsApp.models.NewUser;
-import com.vandan.paymentsApp.models.User;
+import com.vandan.paymentsApp.models.request.NewUser;
+import com.vandan.paymentsApp.entity.User;
 import com.vandan.paymentsApp.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

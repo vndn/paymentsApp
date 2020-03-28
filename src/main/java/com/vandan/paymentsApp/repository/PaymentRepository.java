@@ -1,8 +1,6 @@
 package com.vandan.paymentsApp.repository;
 
-import java.util.List;
-
-import com.vandan.paymentsApp.models.PaymentRequest;
+import com.vandan.paymentsApp.models.request.PaymentRequest;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface PaymentRepository extends MongoRepository<PaymentRequest, String> {
