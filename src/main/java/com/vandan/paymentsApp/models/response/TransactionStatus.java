@@ -6,8 +6,8 @@ import lombok.Data;
 @Data
 public class TransactionStatus {
     int transaction_id;
-    String status;
     double amount;
+    String status;
     String byWhom;
     String toWhom;
     public TransactionStatus(int tid, double amount, String status, String byWhom, String toWhom){

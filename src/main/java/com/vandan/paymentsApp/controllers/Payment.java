@@ -21,7 +21,7 @@ public class Payment{
 
     @PostMapping(path = "/pay", consumes = "application/json", produces = "application/json")
     public ResponseEntity<TransactionStatus> paymentRequestHandler (@RequestBody PaymentRequest paymentRequest) throws URISyntaxException {
-        TransactionStatus transStat = new TransactionStatus(5, 115.5, "SUCCESS");
+        TransactionStatus transStat = new TransactionStatus(5, 115.5, "SUCCESS", "USER", "SYSTEm");
         return paymentService.payToPerson(paymentRequest);
         //return new ResponseEntity<TransactionStatus>(transStat, HttpStatus.OK);
 

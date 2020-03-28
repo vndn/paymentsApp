@@ -18,7 +18,7 @@ public class PaymentService{
     public ResponseEntity<TransactionStatus> payToPerson(PaymentRequest paymentRequest){
         System.out.println(paymentRequest.getAmount());
         System.out.println(paymentDBStore.save(paymentRequest));
-        TransactionStatus transactionStatus = new TransactionStatus(counter++, paymentRequest.getAmount(), "SUCCESS");
+        TransactionStatus transactionStatus = new TransactionStatus(counter++, paymentRequest.getAmount(), "SUCCESS", "SYSTEM",paymentRequest.payto);
         return new ResponseEntity<TransactionStatus>(transactionStatus, HttpStatus.OK);
     }
 
